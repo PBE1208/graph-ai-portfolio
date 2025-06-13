@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pernette Bourdillon Esteve - AI Course Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom color palette classes based on WHO Brand Guidelines */
+        .bg-navy-who { background-color: #00205B; } /* Pantone 281C */
+        .text-navy-who { color: #00205B; }
+        .border-navy-who { border-color: #00205B; }
+
+        .text-blue-who { color: #68A4E0; } /* Pantone 2925C */
+        .border-blue-who { border-color: #68A4E0; }
+        .hover\:text-blue-who:hover { color: #68A4E0; }
+
+        .text-yellow-who { color: #FAB900; } /* Pantone 130C */
+        .hover\:text-yellow-who:hover { color: #FAB900; }
+        
+        .text-purple-who { color: #6D2E80; } /* Pantone 2597C */
+        .hover\:text-purple-who:hover { color: #6D2E80; }
+
+        .card {
+            @apply bg-white shadow-lg rounded-lg p-8 transition-shadow duration-300 hover:shadow-xl;
+        }
+        .list-disc li {
+            @apply mb-2;
+        }
+        .nav-link {
+             @apply text-blue-who hover:text-purple-who font-semibold transition-colors duration-300;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-navy-who text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Left side: Title and Navigation -->
+            <div class="flex flex-col">
+                <h1 class="text-2xl lg:text-3xl font-bold">Pernette Bourdillon Esteve</h1>
+                <nav class="mt-2">
+                    <ul class="flex space-x-6">
+                        <li><a href="#about-me" class="nav-link text-lg">About Me</a></li>
+                        <li><a href="#submissions" class="nav-link text-lg">My Submissions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Right side: Images -->
+            <div class="flex items-center space-x-4">
+                <img src="https://storage.googleapis.com/maker-system-734346.appspot.com/files/graphcourse%20logo.jpg-50ad5741-525f-4fff-899f-dce6b8c70570" alt="GRAPH Course Logo" class="h-16 w-16 rounded-full object-cover hidden sm:block" onerror="this.onerror=null;this.src='https://placehold.co/64x64/E2E8F0/4A5568?text=GRAPH';">
+                <img src="https://storage.googleapis.com/maker-system-734346.appspot.com/files/Pernette_WHO_Portrait_1_ENG.jpg-abdd0228-fbda-430e-a1ec-d152b5535a2c" alt="Portrait of Pernette Bourdillon Esteve" class="h-20 w-20 rounded-full object-cover border-2 border-blue-who" onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=PBE';">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About Me Section -->
+        <section id="about-me" class="mb-16 scroll-mt-28">
+            <div class="card">
+                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">About Me</h2>
+                <div class="text-lg space-y-4">
+                    <p>
+                        Hello! This portfolio showcases my assignments for the "Generative AI for Work & Research" course. After being impressed by the R coding basics offered by the Graph Courses, I have taken up this new course which will help me further leverage Gen-AI for ever-more productivity and innovation.
+                    </p>
+                    <p>
+                        I have an extensive background in global public health, specializing in pharmaceutical regulation, data management, and the development of information-sharing systems and networks. I have operated at both policy and technical levels, always in international and multi-cultural environments.
+                    </p>
+                    <p>
+                        I currently work for the World Health Organization (WHO), where I manage the Global Surveillance and Monitoring System on substandard-falsified medical products. In parallel, I am also doing a PhD with the Institute of Global Health at the University of Geneva.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Weekly Submissions Section -->
+        <section id="submissions" class="mb-16 scroll-mt-28">
+            <div class="card">
+                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">My Weekly Submissions</h2>
+                <p class="mb-6 text-lg">
+                    This section will be updated with links to my weekly submissions as the course progresses. Stay tuned for insights and projects developed throughout my learning journey in Generative AI.
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                    <li>Week 1: <em>Exploring AI Fundamentals</em> - [Link to be added]</li>
+                    <li>Week 2: <em>Automating Data Analysis</em> - [Link to be added]</li>
+                    <li>Week 3: <em>AI for Content Creation</em> - [Link to be added]</li>
+                    <li>Week 4: <em>Knowledge Management with AI</em> - [Link to be added]</li>
+                    <li>Week 5: <em>Building Custom Chatbots</em> - [Link to be added]</li>
+                    <li>Week 6: <em>AI in Visuals & Presentations</em> - [Link to be added]</li>
+                    <li>Week 7: <em>Advanced AI Applications</em> - [Link to be added]</li>
+                    <li>Week 8: <em>Project Refinement & Review</em> - [Link to be added]</li>
+                    <li class="mt-4 font-semibold text-yellow-who">Capstone Project: <em>Comprehensive AI Solution</em> - [Link to be added]</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy-who text-white text-center py-8 mt-12">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="currentYear"></span> Pernette Bourdillon Esteve. All rights reserved.</p>
+            <p class="text-sm text-gray-300 mt-1">Portfolio for "Generative AI for Work & Research Productivity" Course</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
