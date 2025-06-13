@@ -40,35 +40,60 @@
 
     <!-- Header Section -->
     <header class="bg-navy-who text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Left side: Title and Navigation -->
-            <div class="flex flex-col">
-                <h1 class="text-2xl lg:text-3xl font-bold">Pernette Bourdillon Esteve</h1>
-                <nav class="mt-2">
-                    <ul class="flex space-x-6">
-                        <li><a href="#about-me" class="nav-link text-lg">About Me</a></li>
-                        <li><a href="#submissions" class="nav-link text-lg">My Submissions</a></li>
-                    </ul>
-                </nav>
+        <!-- Add relative class and min-height to this container for positioning context -->
+        <div class="container mx-auto px-6 py-4 relative min-h-[100px]">
+            <div class="flex justify-between items-center">
+                <!-- Left side: Title and Navigation -->
+                <div class="flex flex-col">
+                    <h1 class="text-2xl lg:text-3xl font-bold">Pernette Bourdillon Esteve</h1>
+                    <nav class="mt-2">
+                        <ul class="flex space-x-6">
+                            <li><a href="#about-me" class="nav-link text-lg">About Me</a></li>
+                            <li><a href="#submissions" class="nav-link text-lg">My Submissions</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Right side images are now positioned absolutely relative to this container -->
             </div>
-            <!-- Right side: Images -->
-            <div class="flex items-center space-x-4">
-                <img src="https://storage.googleapis.com/maker-system-734346.appspot.com/files/graphcourse%20logo.jpg-50ad5741-525f-4fff-899f-dce6b8c70570" alt="GRAPH Course Logo" class="h-16 w-16 rounded-full object-cover hidden sm:block" onerror="this.onerror=null;this.src='https://placehold.co/64x64/E2E8F0/4A5568?text=GRAPH';">
-                <img src="https://storage.googleapis.com/maker-system-734346.appspot.com/files/Pernette_WHO_Portrait_1_ENG.jpg-abdd0228-fbda-430e-a1ec-d152b5535a2c" alt="Portrait of Pernette Bourdillon Esteve" class="h-20 w-20 rounded-full object-cover border-2 border-blue-who" onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=PBE';">
-            </div>
+            
+            <!-- WHO Logo -->
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/WHO-EN-W-V.png?raw=true" 
+                 alt="World Health Organization Logo" 
+                 class="absolute top-1/2 -translate-y-1/2 right-[22.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=WHO';">
+
+            <!-- UNIGE Logo -->
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/UNIGE%20LOGO.jpg?raw=true" 
+                 alt="University of Geneva Logo" 
+                 class="absolute top-1/2 -translate-y-1/2 right-[16.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=UNIGE';">
+
+            <!-- GRAPH Logo -->
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/graphcourse%20logo.jpg?raw=true" 
+                 alt="GRAPH Course Logo" 
+                 class="absolute top-1/2 -translate-y-1/2 right-[10.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=GRAPH';">
+
+            <!-- Portrait -->
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/Pernette_WHO_Portrait_1_ENG.png?raw=true" 
+                 alt="Portrait of Pernette Bourdillon Esteve" 
+                 class="absolute top-4 right-6 h-32 w-32 rounded-full object-cover border-4 border-blue-who" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/128x128/E2E8F0/4A5568?text=PBE';">
         </div>
     </header>
 
     <!-- Main Content Area -->
-    <main class="container mx-auto px-6 py-12">
+    <!-- Added top padding to main content to avoid overlap with the larger header/image -->
+    <main class="container mx-auto px-6 py-12 pt-20">
 
         <!-- About Me Section -->
-        <section id="about-me" class="mb-16 scroll-mt-28">
+        <!-- Increased scroll-margin-top to account for the larger sticky header -->
+        <section id="about-me" class="mb-16 scroll-mt-36">
             <div class="card">
                 <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">About Me</h2>
                 <div class="text-lg space-y-4">
                     <p>
-                        Hello! This portfolio showcases my assignments for the "Generative AI for Work & Research" course. After being impressed by the R coding basics offered by the Graph Courses, I have taken up this new course which will help me further leverage Gen-AI for ever-more productivity and innovation.
+                        Hello! This portfolio showcases my assignments for the "Generative AI for Work & Research" course. After being impressed by the R coding basics offered by the Graph Network, I have taken up this new course which will help me further leverage Gen-AI for ever-more productivity and innovation.
                     </p>
                     <p>
                         I have an extensive background in global public health, specializing in pharmaceutical regulation, data management, and the development of information-sharing systems and networks. I have operated at both policy and technical levels, always in international and multi-cultural environments.
@@ -81,7 +106,7 @@
         </section>
 
         <!-- My Weekly Submissions Section -->
-        <section id="submissions" class="mb-16 scroll-mt-28">
+        <section id="submissions" class="mb-16 scroll-mt-36">
             <div class="card">
                 <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">My Weekly Submissions</h2>
                 <p class="mb-6 text-lg">
