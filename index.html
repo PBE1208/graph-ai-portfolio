@@ -29,13 +29,16 @@
             @apply bg-white shadow-lg rounded-lg p-8 transition-shadow duration-300 hover:shadow-xl;
         }
         .list-disc li {
-            @apply mb-2;
+            @apply mb-4; /* Increased margin for better separation */
         }
         .nav-link {
              @apply text-blue-who hover:text-purple-who font-semibold transition-colors duration-300;
         }
         .submission-link {
             @apply text-blue-who hover:text-yellow-who underline font-semibold;
+        }
+        .submission-description {
+            @apply text-base text-gray-600 pl-2 mt-1;
         }
     </style>
 </head>
@@ -44,7 +47,7 @@
     <!-- Header Section -->
     <header class="bg-navy-who text-white shadow-lg sticky top-0 z-50">
         <!-- Add relative class and min-height to this container for positioning context -->
-        <div class="container mx-auto px-6 py-4 relative min-h-[100px]">
+        <div class="container mx-auto px-6 py-4 relative min-h-[120px]">
             <div class="flex justify-between items-center">
                 <!-- Left side: Title and Navigation -->
                 <div class="flex flex-col">
@@ -63,38 +66,38 @@
             <!-- WHO Logo -->
             <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/WHO-EN-W-V.png?raw=true" 
                  alt="World Health Organization Logo" 
-                 class="absolute top-1/2 -translate-y-1/2 right-[22.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
+                 class="absolute top-1/2 -translate-y-1/2 right-[24.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
                  onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=WHO';">
 
             <!-- UNIGE Logo -->
             <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/UNIGE%20LOGO.jpg?raw=true" 
                  alt="University of Geneva Logo" 
-                 class="absolute top-1/2 -translate-y-1/2 right-[16.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
+                 class="absolute top-1/2 -translate-y-1/2 right-[18.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
                  onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=UNIGE';">
 
             <!-- GRAPH Logo -->
             <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/graphcourse%20logo.jpg?raw=true" 
                  alt="GRAPH Course Logo" 
-                 class="absolute top-1/2 -translate-y-1/2 right-[10.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
+                 class="absolute top-1/2 -translate-y-1/2 right-[12.5rem] h-20 w-20 rounded-full object-cover border-2 border-blue-who hidden sm:block" 
                  onerror="this.onerror=null;this.src='https://placehold.co/80x80/E2E8F0/4A5568?text=GRAPH';">
 
-            <!-- Portrait -->
+            <!-- Portrait: Increased size -->
             <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/Pernette_WHO_Portrait_1_ENG.png?raw=true" 
                  alt="Portrait of Pernette Bourdillon Esteve" 
-                 class="absolute top-4 right-6 h-32 w-32 rounded-full object-cover border-4 border-blue-who" 
-                 onerror="this.onerror=null;this.src='https://placehold.co/128x128/E2E8F0/4A5568?text=PBE';">
+                 class="absolute top-4 right-6 h-40 w-40 rounded-full object-cover border-4 border-blue-who" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/160x160/E2E8F0/4A5568?text=PBE';">
         </div>
     </header>
 
     <!-- Main Content Area -->
-    <!-- Added top padding to main content to avoid overlap with the larger header/image -->
-    <main class="container mx-auto px-6 py-12 pt-20">
+    <!-- Increased top padding to avoid overlap -->
+    <main class="container mx-auto px-6 py-12 pt-24">
 
         <!-- About Me Section -->
         <!-- Increased scroll-margin-top to account for the larger sticky header -->
-        <section id="about-me" class="mb-16 scroll-mt-36">
+        <section id="about-me" class="mb-16 scroll-mt-40">
             <div class="card">
-                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">About me</h2>
+                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">About Me</h2>
                 <div class="text-lg space-y-4">
                     <p>
                         Hello! This portfolio showcases my assignments for the "Generative AI for Work & Research" course. After being impressed by the R coding basics offered by the Graph Network, I have taken up this new course which will help me further leverage Gen-AI for ever-more productivity and innovation.
@@ -110,15 +113,20 @@
         </section>
 
         <!-- My Weekly Submissions Section -->
-        <section id="submissions" class="mb-16 scroll-mt-36">
+        <section id="submissions" class="mb-16 scroll-mt-40">
             <div class="card">
-                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">My weekly submissions</h2>
+                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">My Weekly Submissions</h2>
                 <p class="mb-6 text-lg">
                     This section will be updated with links to my weekly submissions as the course progresses. Stay tuned for insights and projects developed throughout my learning journey in Generative AI.
                 </p>
-                <ul class="list-disc pl-5 space-y-2 text-lg">
-                    <li>Week 1: <em>Exploring AI Fundamentals</em> - <a href="https://thegraphcourses.org/aiw/" target="_blank" class="submission-link">View Submission</a></li>
-                    <li>Week 2: <em>Automating Data Analysis</em> - [Link to be added]</li>
+                <ul class="list-disc pl-5 space-y-4 text-lg">
+                    <li>
+                        Week 1: <em>Exploring AI Fundamentals</em> - <a href="https://thegraphcourses.org/aiw/" target="_blank" class="submission-link">View Submission</a>
+                    </li>
+                    <li>
+                        <div>Week 2: <em>Automated data analysis using Cursor</em> - <a href="https://github.com/PBE1208/graph-ai-portfolio/blob/main/PBE_w2_lexF_tfr.pdf" target="_blank" class="submission-link">View PDF</a></div>
+                        <p class="submission-description">Using AI to explore relationships between total fertility rate and female life expectancy, using data from Gapminder.</p>
+                    </li>
                     <li>Week 3: <em>AI for Content Creation</em> - [Link to be added]</li>
                     <li>Week 4: <em>Knowledge Management with AI</em> - [Link to be added]</li>
                     <li>Week 5: <em>Building Custom Chatbots</em> - [Link to be added]</li>
@@ -131,16 +139,16 @@
         </section>
 
         <!-- Curriculum Vitae Section -->
-        <section id="cv" class="mb-16 scroll-mt-36">
+        <section id="cv" class="mb-16 scroll-mt-40">
             <div class="card">
-                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">Curriculum vitae</h2>
+                <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">Curriculum Vitae</h2>
                 <div class="text-lg space-y-6">
                     <p>A brief overview of my professional background. A full version can be provided upon request.</p>
                     
                     <div>
                         <h3 class="text-2xl font-semibold text-navy-who mb-3">Education</h3>
                         <ul class="list-disc pl-5 space-y-2">
-                            <li>Doctoral Programme in Global Health, University of Geneva (2022-2026)</li>
+                            <li>Doctoral Programme in Global Health, University of Geneva (2022-2025)</li>
                             <li>Master’s Degree in International Development, Political Sciences Institute, Lyon</li>
                             <li>“Double Bachelor” Degree in Public Health, University of Aix-Marseille III</li>
                         </ul>
@@ -149,12 +157,12 @@
                     <div>
                         <h3 class="text-2xl font-semibold text-navy-who mb-3">Professional Experience Highlight</h3>
                         <ul class="list-disc pl-5 space-y-2">
-                            <li>Technical Officer, WHO – Global Surveillance and Monitoring System (2022 - Present)</li>
-                            <li>Team Lead, WHO – Incidents and Substandard-Falsified (SF) medical products (2019 - 2021)</li>
-                            <li>Analyst, WHO – Safety and vigilance unit (2013 - 2019)</li>
-                            <li>Consultant, UN Office on Drugs and Crime (2012)</li>
+                            <li>Technical Officer, WHO – Incidents and Substandard/Falsified (SF) Medical Products (2021 - Present)</li>
+                            <li>Team Lead (ad interim), WHO – Incidents and Substandard/Falsified (SF) Medical Products (2019 - 2021)</li>
+                            <li>Analyst, WHO – Substandard and Falsified (SF) Medical Products (2012 - 2019)</li>
+                            <li>Consultant, UNODC (2012)</li>
                             <li>Executive and Special Projects Officer, UNITAID (2010 - 2012)</li>
-                            <li>Attaché to the Global Health Ambassador, French Foreign Affairs Ministry (2009 - 2010)</li>
+                            <li>Attaché and Project Officer, French Foreign Affairs Ministry (2009 - 2010)</li>
                         </ul>
                     </div>
 
