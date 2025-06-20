@@ -34,8 +34,16 @@
         .nav-link {
              @apply text-blue-who hover:text-purple-who font-semibold transition-colors duration-300;
         }
-        .submission-link {
-            @apply text-blue-who hover:text-yellow-who underline font-semibold;
+        /* Combined style for all links inside the main content */
+        .submission-link, .embedded-link {
+            color: #00205B; /* Navy blue text */
+            font-weight: 600; /* semibold */
+            text-decoration: none; /* Remove default underline */
+            border-bottom: 1px solid rgba(0, 32, 91, 0.4); /* Faint, semi-transparent underline */
+            transition: border-color 0.3s ease;
+        }
+        .submission-link:hover, .embedded-link:hover {
+            border-color: #FAB900; /* Yellow on hover */
         }
         .submission-description {
             @apply text-base text-gray-600 pl-2 mt-1;
@@ -100,13 +108,13 @@
                 <h2 class="text-3xl font-semibold mb-6 pb-2 border-b-2 text-navy-who border-blue-who">About Me</h2>
                 <div class="text-lg space-y-4">
                     <p>
-                        Hello! This portfolio showcases my assignments for the "Generative AI for Work & Research" course. After being impressed by the R coding basics offered by the Graph Network, I have taken up this new course which will help me further leverage Gen-AI for ever-more productivity and innovation.
+                        Hello! This portfolio showcases my assignments for the "<a href="https://thegraphcourses.org/aiw/" target="_blank" class="embedded-link">Generative AI for Work & Research</a>" course. After being impressed by the R coding basics offered by the Graph Network, I have taken up this new course which will help me further leverage Gen-AI for ever-more productivity and innovation.
                     </p>
                     <p>
                         I have an extensive background in global public health, specializing in pharmaceutical regulation, data management, and the development of information-sharing systems and networks. I have operated at both policy and technical levels, always in international and multi-cultural environments.
                     </p>
                     <p>
-                        I currently work for the World Health Organization (WHO), where I manage the Global Surveillance and Monitoring System on substandard-falsified medical products. In parallel, I am also doing a PhD with the Institute of Global Health at the University of Geneva.
+                        I currently work for the World Health Organization (WHO), where I manage the <a href="https://www.who.int/health-topics/substandard-and-falsified-medical-products#tab=tab_1" target="_blank" class="embedded-link">Global Surveillance and Monitoring System on substandard-falsified medical products</a>. In parallel, I am also doing a PhD with the Institute of Global Health at the University of Geneva.
                     </p>
                 </div>
             </div>
@@ -124,10 +132,12 @@
                         Week 1: <em>Exploring AI Fundamentals</em> - <a href="https://thegraphcourses.org/aiw/" target="_blank" class="submission-link">View Submission</a>
                     </li>
                     <li>
-                        <div>Week 2: <em>Automated data analysis using Cursor</em> - <a href="https://github.com/PBE1208/graph-ai-portfolio/blob/main/PBE_w2_lexF_tfr.pdf" target="_blank" class="submission-link">View PDF</a></div>
+                        <div>Week 2: <em>Automated data analysis using Cursor</em> - <a href="https://github.com/PBE1208/graph-ai-portfolio/blob/main/PBE_w2_lexF_tfr.pdf" target="_blank" class="submission-link">View Report</a></div>
                         <p class="submission-description">Using AI to explore relationships between total fertility rate and female life expectancy, using data from Gapminder.</p>
                     </li>
-                    <li>Week 3: <em>AI for Content Creation</em> - [Link to be added]</li>
+                    <li>
+                        <div>Week 3: <em>Analyzing Job Market Data with LLMs in Sheets and AI Reporting Agents</em> - <a href="https://github.com/PBE1208/graph-ai-portfolio/blob/main/PBE_w3_GraphC.pdf" target="_blank" class="submission-link">View Report</a></div>
+                    </li>
                     <li>Week 4: <em>Knowledge Management with AI</em> - [Link to be added]</li>
                     <li>Week 5: <em>Building Custom Chatbots</em> - [Link to be added]</li>
                     <li>Week 6: <em>AI in Visuals & Presentations</em> - [Link to be added]</li>
