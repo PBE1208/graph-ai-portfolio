@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Courses – AI Portfolio Showcase Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7fa; /* A very light grey background for contrast */
+        }
+        /* Custom color palette classes based on WHO Brand Guidelines */
+        .text-navy-who { color: #00205B; } /* Pantone 281C */
+        .bg-navy-who { background-color: #00205B; }
+
+        .text-blue-who { color: #68A4E0; } /* Pantone 2925C */
+        .bg-blue-who { background-color: #68A4E0; } /* Pantone 2925C */
+        .border-blue-who { border-color: #68A4E0; }
+
+        .text-yellow-who { color: #FAB900; } /* Pantone 130C */
+        
+        .text-purple-who { color: #6D2E80; } /* Pantone 2597C */
+        .bg-purple-who { background-color: #6D2E80; }
+
+
+        .flyer-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        .flyer-header {
+            background-image: linear-gradient(135deg, #00205B, #68A4E0);
+            padding: 3rem 2rem;
+            color: white;
+        }
+
+        .flyer-content {
+            padding: 2.5rem;
+        }
+
+        .icon-circle {
+            @apply h-12 w-12 rounded-full flex items-center justify-center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <!-- Header Section -->
+        <div class="flyer-header text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Graph Courses – AI Portfolio Showcase Day</h1>
+            <p class="mt-4 text-xl md:text-2xl opacity-90">Generative AI for Work & Research</p>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="flyer-content">
+            <!-- Date and Time Section -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold text-navy-who mb-4 border-b-2 border-blue-who pb-2">Event Dates & Times (choose either)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+                    <!-- Date 1 -->
+                    <div class="flex items-center space-x-4">
+                        <div class="icon-circle bg-navy-who text-white">
+                            <!-- Calendar Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-navy-who">Friday, 27 Jun 2025</p>
+                            <p class="text-gray-600">3 – 5 PM (GMT)</p>
+                        </div>
+                    </div>
+                    <!-- Date 2 -->
+                    <div class="flex items-center space-x-4">
+                        <div class="icon-circle bg-navy-who text-white">
+                            <!-- Calendar Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-navy-who">Sunday, 29 Jun 2025</p>
+                            <p class="text-gray-600">5 – 7 PM (GMT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign Up Section -->
+            <div>
+                <h2 class="text-2xl font-bold text-navy-who mb-4 border-b-2 border-blue-who pb-2">How to Sign Up</h2>
+                <div class="flex items-start space-x-4">
+                     <div class="icon-circle bg-blue-who text-white flex-shrink-0">
+                        <!-- Chat Bubble Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <p class="text-lg text-gray-700">
+                        To sign up, <a href="https://pbe1208.github.io/graph-ai-portfolio/" target="_blank" class="font-semibold text-navy-who underline hover:text-yellow-who transition-colors">visit my website</a> and open the chat bubble. Tell the AI agent you would like to attend the showcase. It will collect your details and we'll send you a confirmation email.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer with Logos -->
+        <div class="bg-navy-who p-4 flex justify-center items-center space-x-6">
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/WHO-EN-W-V.png?raw=true" alt="WHO Logo" class="h-12" onerror="this.onerror=null;this.src='https://placehold.co/48x48/E2E8F0/4A5568?text=WHO';">
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/UNIGE%20LOGO.jpg?raw=true" alt="UNIGE Logo" class="h-12 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/48x48/E2E8F0/4A5568?text=UNIGE';">
+            <img src="https://github.com/PBE1208/graph-ai-portfolio/blob/main/graphcourse%20logo.jpg?raw=true" alt="GRAPH Course Logo" class="h-12 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/48x48/E2E8F0/4A5568?text=GRAPH';">
+        </div>
+    </div>
+</body>
+</html>
